@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Part 1 -->
+    <div id="board">
+        <h1>Event Tracker</h1>
+        <div class="part">
+            <h3>Click Event</h3>
+            <button class="btn" id="button1">Click me</button>
+            <div id="count">Click count: 0</div>
+        </div>
+        <!-- Part 2 -->
+        <div class="part">
+            <h3>Mouse Event</h3>
+            <div class="box1" id="box">300 x 300</div>
+            <div id="result1">Mouse Position: (0,0)</div>
+        </div>
+        <!-- Part 3 -->
+        <div class="part">
+            <h3>Keyboard Events</h3>
+            <input type="text" id="key" placeholder="Press any key" class="btn">
+            <div id="result1">Last key pressed: <span id="response">None</span></div>
+        </div>
+        <!-- Part 4 -->
+        <div class="part">
+            <h3>Focus & Blur Events</h3>
+            <input type="text" id="key1" placeholder="Focus or Blur" class="btn">
+            <div>Focus status: <span id="response1">Not focused</span></div>
+        </div>
+        <!-- Part 4 -->
+        <div class="part">
+            <h3>Window Resize Events</h3>
+            <div>Window Width: <span id="width#">0px</span>, Window Height <span id="height#">0px</span>
+            </div>
+        </div>
+        <!-- Part 5 -->
+        <div class="part" id="box2">
+            <h3>Touch Events</h3>
+            <div>Touch Position: <span id="touchUpdate"></span></div>
+        </div>
+        <!-- Part 5 -->
+        <div class="part">
+            <h3>Form Submit Event</h3>
+            <form id="form">
+                <input type="text" id="formInput" placeholder="Type here to submit" class="btn">
+                <button class="btn" id="button2">Submit</button>
+            </form>
+            <p id="status">Form Status: Not Submitted </p>
+        </div>
+        <!-- Part 5 -->
+        <div class="part">
+            <h3>Drag & Drop Event</h3>
+            <div id="boxes">
+                <div class="box1" id="dragArea" draggable="true">Drag me</div>
+                <div class="box1" id="dropArea">Drop here</div>
+            </div>
+            <div>Status: <span id="status1">none</span></div>
+        </div>
+        <!-- Part 6 -->
+        <div class="part">
+            <h3>Media Event</h3>
+            <video src="images/video.mp4" controls id="videoo"></video>
+            <div>Status: <span id="status2">none</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
